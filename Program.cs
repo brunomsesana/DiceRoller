@@ -5,12 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<DiceService>();
 builder.Services.AddControllers();
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "3000";
-var url = $"http://0.0.0.0:{port}";
-var target = Environment.GetEnvironmentVariable("TARGET") ?? "World";
-
-var app = builder.Build();
-
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -20,6 +14,13 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "3000";
+var url = $"http://0.0.0.0:{port}";
+var target = Environment.GetEnvironmentVariable("TARGET") ?? "World";
+
+var app = builder.Build();
+
 
 app.UseCors();
 
