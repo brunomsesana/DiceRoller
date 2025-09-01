@@ -1,12 +1,32 @@
 # Dice Roller
 Adaptação da parte de rolagem de dados da api do LetItRoll em uma REST API separada.
 
+Disponível em: https://diceroller.up.railway.app/roll
+
 ## Inclui:
 - Interpretação de macros
 - Geração de números aleatórios
 - Cálculos
 - Criação de variáveis
 - Condicionais
+
+## **Padrão de requisição:**
+
+**URL:**
+
+GET /roll
+
+
+**Headers:**
+
+Content-Type: application/json
+
+
+**Request Body:**
+
+{
+  "macro": string
+}
 
 ## **1\. O Conceito Principal: Expressões \[...\]**
 
