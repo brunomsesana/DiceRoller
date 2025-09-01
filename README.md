@@ -1,6 +1,8 @@
 # Dice Roller
 Adaptação da parte de rolagem de dados da api do LetItRoll em uma REST API separada.
 
+Disponível em: https://diceroller.up.railway.app/roll
+
 ## Inclui:
 - Interpretação de macros
 - Geração de números aleatórios
