@@ -33,3 +33,4 @@
 /home/user/diceroller/obj/Debug/net9.0/myapp.csproj.AssemblyReference.cache
 /home/user/diceroller/obj/Debug/net9.0/myapp.MvcApplicationPartsAssemblyInfo.cs
 /home/user/diceroller/obj/Debug/net9.0/myapp.csproj.Up2Date
+/home/user/diceroller/obj/Debug/net9.0/myapp.sourcelink.json

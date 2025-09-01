@@ -8,8 +8,8 @@ namespace myapp.Services
     public class DiceService
     {
         private readonly Random _random = new();
-        private readonly Dictionary<string, string> _variables = [];
-        private readonly List<Rolagem> _rollLogs = [];
+        private readonly Dictionary<string, string> _variables = new();
+        private readonly List<Rolagem> _rollLogs = new();
 
         public ResultadoDTO Roll(string macro){
             _variables.Clear();
