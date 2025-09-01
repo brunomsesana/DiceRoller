@@ -29,6 +29,18 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+app.UseCors();
+
 app.MapControllers();
 
 app.Run(url);

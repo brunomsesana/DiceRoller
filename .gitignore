@@ -1,0 +1,57 @@
+# Compilados
+bin/
+obj/
+out/
+artifacts/
+
+# Usuário / IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+
+# Configurações locais
+appsettings.Development.json
+secrets.json
+
+# Cache
+*.pidb
+*.svclog
+*.userprefs
+*.rsuser
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+
+# Teste / cobertura
+TestResults/
+*.coverage
+*.coveragexml
+
+# Pacotes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.tmp
+project.lock.json
+project.fragment.lock.json
+
+# Docker
+*.dockerfile
+*.env
+.dockerignore
+
+# Nixpacks / Railway / Build
+.nixpacks/
+.idx/
